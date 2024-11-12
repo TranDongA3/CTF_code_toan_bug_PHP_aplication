@@ -59,13 +59,7 @@ Cụ thể giao diện khi các bạn truy cập vào web thử thách sẽ là 
                     include "flag.php";
                     echo 'Awesome! Here is your flag: ' . htmlspecialchars($flag, ENT_QUOTES, 'UTF-8');
                 } else {
-                    echo 'Flag file not found.';
-                }
-            } else {
-                echo 'Incorrect credentials.<br>';
-            }
-        }
-Chúng ta thấy chỉ cần this->admin thì nó sẽ kiểm tra file flag có tồn tại hay ko và nó sẽ in ra cho chúng ta. Nhưng ở đây ta phải hiểu là this ở đây đại diện cho đối tượng của class x. Class x này được định nghĩa là đối tượng có 3 tham số username, password và isAdmin và ta chỉ có 2 đầu vào có thể thay đổi là username, password
+                tính username, password và isAdmin và ta chỉ có 2 đầu vào có thể thay đổi là username, password
 
     $username = isset($_GET['username']) ? $_GET['username'] : '';
     $password = isset($_GET['password']) ? $_GET['password'] : '';
